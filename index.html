@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Map</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="controls">
+    <label>Marker Color:
+      <input type="color" id="marker-color" value="#ff0000">
+    </label>
+
+    <label>Marker Shape:
+      <select id="marker-shape">
+        <option value="circle">Circle</option>
+        <option value="square">Square</option>
+        <option value="triangle">Triangle</option>
+      </select>
+    </label>
+
+    <label>Marker Size:
+      <input type="range" id="marker-size" min="20" max="100" value="40">
+    </label>
+
+    <label>Map Image:
+      <select id="map-select">
+        <option value="images/map1.jpg">India | Political Map </option>
+        <option value="images/map2.jpg">India | Physical Map</option>
+      
+
+      </select>
+    </label>
+
+    <button id="remove-markers">Remove All Markers</button>
+  </div>
+
+  <div class="map-container">
+    <img id="map-image" src="images/map1.jpg" alt="Map">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
